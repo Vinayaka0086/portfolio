@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vinayaka Datta — DevOps Engineer</title>
+  <meta name="description" content="Vinayaka Datta — DevOps Engineer. Multi-cloud infrastructure, CI/CD automation, containerization, monitoring." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1724;
+      --accent:#7c5cff;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --max-width:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:linear-gradient(180deg,#071025 0%, #071827 60%);
+      color:#e6eef8;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 20px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:24px;
+      align-items:start;
+    }
+    header.hero{
+      grid-column:1 / span 2;
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      align-items:center;
+      margin-bottom:6px;
+    }
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .avatar{
+      width:72px;height:72px;border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),#4cc9f0);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:#071025;font-size:20px;
+      box-shadow:0 8px 30px rgba(124,92,255,0.14);
+    }
+    h1{margin:0;font-size:1.4rem}
+    p.lead{margin:0;color:var(--muted);font-size:0.98rem}
+
+    /* Main card */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+
+    /* Left column */
+    .left{display:flex;flex-direction:column;gap:18px}
+    .section-title{display:flex;justify-content:space-between;align-items:center}
+    .section-title h2{margin:0;font-size:1.05rem}
+    .about p{color:var(--muted);margin:8px 0 0 0;line-height:1.5}
+
+    /* Experience */
+    .experience .role{display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .role h3{margin:0;font-size:1rem}
+    .role .meta{color:var(--muted);font-size:0.92rem}
+    .bullets{margin:8px 0 0 0;padding-left:18px;color:var(--muted)}
+
+    /* Projects */
+    .projects .project{display:grid;grid-template-columns:1fr 140px;gap:12px;padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+    .tech{font-size:0.85rem;color:var(--muted);margin-top:8px}
+
+    /* Skills */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem;border:1px solid rgba(255,255,255,0.02)}
+
+    /* Right column */
+    aside.right{display:flex;flex-direction:column;gap:14px}
+    .contact .item{display:flex;gap:10px;align-items:center;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    .cta{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#071025;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+
+    footer.foot{grid-column:1 / span 2;text-align:center;color:var(--muted);font-size:0.9rem;margin-top:6px}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .wrap{grid-template-columns:1fr; padding-bottom:30px}
+      header.hero{flex-direction:column;align-items:flex-start;gap:10px}
+      .projects .project{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="main-title">
+    <header class="hero">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">VD</div>
+        <div>
+          <h1 id="main-title">Burra Vinayaka Datta</h1>
+          <p class="lead">DevOps Engineer — Multi‑cloud infrastructure, CI/CD automation, containerization, monitoring</p>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- Left column -->
+    <section class="left">
+      <article class="card about" id="about" aria-labelledby="about-title">
+        <div class="section-title"><h2 id="about-title">About</h2></div>
+        <p>
+          DevOps Engineer with practical experience across AWS and Azure, focused on automation, reliability, and observability.
+          I design CI/CD pipelines, containerized deployments, and monitoring solutions that reduce release time and cloud costs.
+        </p>
+        <p style="margin-top:10px;color:var(--muted)">
+          Quick fact from resume: <strong>DevOps Engineer with hands-on experience in multi-cloud infrastructure (AWS & Azure), CI/CD automation, containerization, and production-grade monitoring.</strong> 
+        </p>
+      </article>
+
+      <article class="card experience" id="experience" aria-labelledby="exp-title">
+        <div class="section-title"><h2 id="exp-title">Experience</h2></div>
+
+        <div class="role" style="margin-top:8px">
+          <div>
+            <h3>DevOps Engineer — Volksskatt Infotech Pvt. Ltd.</h3>
+            <div class="meta">Hyderabad, India · February 2025 — Present</div>
+          </div>
+          <div class="meta">Impact highlights</div>
+        </div>
+
+        <ul class="bullets">
+          <li>Managed AWS and Azure workloads including EC2, VPCs, IAM, Azure VMs and NSGs — reduced manual provisioning by <strong>40%</strong>. </li>
+          <li>Designed GitHub Actions CI/CD pipelines for build, test, security scan, and deploy — cut release cycles by <strong>35%</strong>.</li>
+          <li>Deployed microservices on ECS and AKS with rolling updates and HPA — achieved <strong>99.9% uptime</strong>.</li>
+          <li>Configured Prometheus exporters and Grafana dashboards for proactive alerting and observability.</li>
+        </ul>
+      </article>
+
+      <article class="card projects" id="projects" aria-labelledby="proj-title">
+        <div class="section-title"><h2 id="proj-title">Featured Projects</h2></div>
+
+        <div class="project" style="margin-top:10px">
+          <div>
+            <strong>Containerized Django App — AWS ECS/ECR with CI/CD</strong>
+            <div class="tech">Docker · AWS ECS · ECR · GitHub Actions · Python/Django · CloudWatch · ALB · Secrets Manager</div>
+            <p style="margin-top:8px;color:var(--muted)">Built a multi-stage Docker image and GitHub Actions pipeline to auto-build, tag, push to ECR, and redeploy ECS on merge. Deployment time reduced from hours to under 5 minutes with secure secrets and CloudWatch alarms. </p>
+          </div>
+          <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-end">
+            <div style="font-size:0.85rem;color:var(--muted)">Outcome</div>
+            <div style="font-weight:700;margin-top:6px">Repeatable one‑click releases</div>
+          </div>
+        </div>
+
+        <div class="project" style="margin-top:12px">
+          <div>
+            <strong>Production‑Grade AWS VPC — Multi‑AZ HA Architecture</strong>
+            <div class="tech">AWS VPC · EC2 · Auto Scaling · ALB · NAT Gateway · Security Groups · IAM</div>
+            <p style="margin-top:8px;color:var(--muted)">Designed a multi‑AZ VPC with public and private subnets, ALB, and ASG to eliminate single points of failure and protect backend instances. Resulted in high availability and secure networking for production traffic.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-end">
+            <div style="font-size:0.85rem;color:var(--muted)">Outcome</div>
+            <div style="font-weight:700;margin-top:6px">Zero single points of failure</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card skills" id="skills" aria-labelledby="skills-title">
+        <div class="section-title"><h2 id="skills-title">Skills</h2></div>
+        <div style="margin-top:10px" class="skills">
+          <span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Azure</span>
+          <span class="chip">GitHub Actions</span>
+          <span class="chip">Terraform</span>
+          <span class="chip">Prometheus</span>
+          <span class="chip">Grafana</span>
+          <span class="chip">Python</span>
+          <span class="chip">Bash</span>
+        </div>
+      </article>
+
+      <article class="card education" id="education" aria-labelledby="edu-title">
+        <div class="section-title"><h2 id="edu-title">Education and Certifications</h2></div>
+        <div style="margin-top:10px;color:var(--muted)">
+          <div><strong>Malla Reddy University</strong> — B.E. Computer Science AI & ML · 2021–2025 · CGPA 8.50/10</div>
+          <div style="margin-top:8px"><strong>Certifications</strong>: AWS S3 Basics (Coursera); Python Data Structures (Univ. of Michigan); Java Programming (Coursera)</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Right column -->
+    <aside class="right">
+      <div class="card contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-title"><h2 id="contact-title">Contact</h2></div>
+        <div style="margin-top:10px">
+          <div class="item"><strong>Email</strong><div style="margin-left:auto"><a href="mailto:vinayakadatta@gmail.com">vinayakadatta@gmail.com</a></div></div>
+          <div class="item" style="margin-top:8px"><strong>Phone</strong><div style="margin-left:auto;color:var(--muted)">+91‑9392596813</div></div>
+          <div class="item" style="margin-top:8px"><strong>Location</strong><div style="margin-left:auto;color:var(--muted)">Hyderabad, India</div></div>
+          <div class="item" style="margin-top:8px"><strong>LinkedIn</strong><div style="margin-left:auto"><a href="https://linkedin.com/in/vinayaka-datta-032b5a278" target="_blank" rel="noopener">linkedin.com/in/vinayaka-datta-032b5a278</a></div></div>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <a class="btn" href="mailto:vinayakadatta@gmail.com">Email</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+      </div>
+
+      <div class="card" style="padding:14px">
+        <h3 style="margin:0 0 8px 0">Availability</h3>
+        <p style="margin:0;color:var(--muted)">Open to DevOps roles and contract work. Available for interviews and technical discussions.</p>
+      </div>
+
+      <div class="card" style="padding:14px">
+        <h3 style="margin:0 0 8px 0">Download Resume</h3>
+        <p style="margin:0;color:var(--muted)">Resume available on request. Email to receive a PDF copy.</p>
+      </div>
+    </aside>
+
+    <footer class="foot">Built with focus on automation, reliability, and observability · © Vinayaka Datta</footer>
+  </main>
+
+  <script>
+    // Small enhancement: smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
